@@ -32,6 +32,7 @@ public class Menu extends JFrame{
 		Customer e;
 
 
+		//Tobias is here
 	 JPanel panel2;
 		JButton add;
 		String 	PPS,firstName,surname,DOB,CustomerID;
@@ -156,9 +157,7 @@ public class Menu extends JFrame{
 								 }
 								}
 								
-								
-								
-								
+										
 							    ArrayList<CustomerAccount> accounts = new ArrayList<CustomerAccount> ();
 										Customer customer = new Customer(PPS, surname, firstName, DOB, CustomerID, password, accounts);
 											
@@ -248,7 +247,7 @@ public class Menu extends JFrame{
 					    {
 						f1.dispose();
 					    	loop = false;
-					    admin();					    
+					    adminMenu();					    
 					    }					    
 					}
 					//----------------------------------------------------------------------------------------------------------------
@@ -323,7 +322,7 @@ public class Menu extends JFrame{
 					    {
 						f.dispose();
 					    	loop = false;
-					    	customer(customer);				    
+					    	customerMenu(customer);				    
 					    }				    
 					}
 					//-----------------------------------------------------------------------------------------------------------------------
@@ -333,7 +332,7 @@ public class Menu extends JFrame{
 	
 
 	
-	public void admin()
+	public void adminMenu()
 	{
 		dispose();
 		
@@ -416,7 +415,7 @@ public class Menu extends JFrame{
 				{
 					JOptionPane.showMessageDialog(f, "There are no customers yet!"  ,"Oops!",  JOptionPane.INFORMATION_MESSAGE);
 					f.dispose();
-					admin();
+					adminMenu();
 					
 				}
 				else
@@ -446,7 +445,7 @@ public class Menu extends JFrame{
 			    		f.dispose();
 			    		loop = false;
 			    	
-			    		admin();
+			    		adminMenu();
 			    	}
 			    }  
 			    else
@@ -491,7 +490,7 @@ public class Menu extends JFrame{
 						{
 							JOptionPane.showMessageDialog(f, "This customer has no accounts! \n The admin must add acounts to this customer."   ,"Oops!",  JOptionPane.INFORMATION_MESSAGE);
 							f.dispose();
-							admin();
+							adminMenu();
 						}
 						else
 						{
@@ -529,7 +528,7 @@ public class Menu extends JFrame{
 							
 							
 							f.dispose();				
-						admin();				
+						adminMenu();				
 						}		
 				     });
 					
@@ -561,7 +560,7 @@ public class Menu extends JFrame{
 				{
 					JOptionPane.showMessageDialog(f, "There are no customers yet!"  ,"Oops!",  JOptionPane.INFORMATION_MESSAGE);
 					f.dispose();
-					admin();
+					adminMenu();
 					
 				}
 				else
@@ -591,7 +590,7 @@ public class Menu extends JFrame{
 			    		f.dispose();
 			    		loop = false;
 			    	
-			    		admin();
+			    		adminMenu();
 			    	}
 			    }  
 			    else
@@ -638,7 +637,7 @@ public class Menu extends JFrame{
 						{
 							JOptionPane.showMessageDialog(f, "This customer has no accounts! \n The admin must add acounts to this customer."   ,"Oops!",  JOptionPane.INFORMATION_MESSAGE);
 							f.dispose();
-							admin();
+							adminMenu();
 						}
 						else
 						{
@@ -681,7 +680,7 @@ public class Menu extends JFrame{
 						 	}
 							
 							f.dispose();				
-						admin();				
+						adminMenu();				
 						}		
 				     });
 					
@@ -711,7 +710,7 @@ public class Menu extends JFrame{
 				{
 					JOptionPane.showMessageDialog(f, "There are no customers yet!"  ,"Oops!",  JOptionPane.INFORMATION_MESSAGE);
 					f.dispose();
-					admin();
+					adminMenu();
 					
 				}
 				else
@@ -741,7 +740,7 @@ public class Menu extends JFrame{
 			    		f.dispose();
 			    		loop = false;
 			    	
-			    		admin();
+			    		adminMenu();
 			    	}
 			    }
 			    else
@@ -836,7 +835,7 @@ public class Menu extends JFrame{
 					public void actionPerformed(ActionEvent ae) {
 						f.dispose();
 						
-						admin();				
+						adminMenu();				
 					}		
 			     });		
 				}}
@@ -904,7 +903,7 @@ public class Menu extends JFrame{
 				returnButton.addActionListener(new ActionListener(  ) {
 					public void actionPerformed(ActionEvent ae) {
 						f.dispose();			
-					admin();				
+					adminMenu();				
 					}		
 			     });	
 			}	
@@ -917,7 +916,7 @@ public class Menu extends JFrame{
 				if(customerList.isEmpty())
 				{
 					JOptionPane.showMessageDialog(null, "There are currently no customers to display. ");
-					admin();
+					adminMenu();
 				}
 				else
 				{
@@ -1063,7 +1062,7 @@ public class Menu extends JFrame{
 				cancel.addActionListener(new ActionListener(  ) {
 					public void actionPerformed(ActionEvent ae) {				
 						dispose();
-						admin();
+						adminMenu();
 							}		
 					     });			
 				setContentPane(content);
@@ -1081,7 +1080,7 @@ public class Menu extends JFrame{
 				{
 					JOptionPane.showMessageDialog(f, "There are no customers yet!"  ,"Oops!",  JOptionPane.INFORMATION_MESSAGE);
 					f.dispose();
-					admin();
+					adminMenu();
 				}
 				else
 				{
@@ -1113,7 +1112,7 @@ public class Menu extends JFrame{
 			    		f.dispose();
 			    		loop = false;
 			    	
-			    		admin();
+			    		adminMenu();
 			    	}
 			    }
 			    else
@@ -1142,7 +1141,7 @@ public class Menu extends JFrame{
 				    	JOptionPane.showMessageDialog(f, "Account number = " + number +"\n PIN = " + pin  ,"Account created.",  JOptionPane.INFORMATION_MESSAGE);
 				    	
 				    	f.dispose();
-				    	admin();
+				    	adminMenu();
 				    }
 				    
 				    if(account.equals("Deposit Account"))
@@ -1159,7 +1158,7 @@ public class Menu extends JFrame{
 				    	JOptionPane.showMessageDialog(f, "Account number = " + number ,"Account created.",  JOptionPane.INFORMATION_MESSAGE);
 				    	
 				    	f.dispose();
-				    	admin();
+				    	adminMenu();
 				    }
 			    
 			    }			   
@@ -1176,7 +1175,7 @@ public class Menu extends JFrame{
 				{
 					JOptionPane.showMessageDialog(null, "There are currently no customers to display. ");
 					dispose();
-					admin();
+					adminMenu();
 				}
 				else
 				{
@@ -1204,7 +1203,7 @@ public class Menu extends JFrame{
 						    		f.dispose();
 						    		loop = false;
 						    		
-						    		admin();
+						    		adminMenu();
 						    	}
 						    }  
 						    else
@@ -1256,7 +1255,7 @@ public class Menu extends JFrame{
 						    		f.dispose();
 						    		loop = false;
 						    	
-						    		admin();
+						    		adminMenu();
 						    	}
 						    }  
 						    else
@@ -1276,7 +1275,7 @@ public class Menu extends JFrame{
 	     });		
 	}
 	
-	public void customer(Customer e1)
+	public void customerMenu(Customer e1)
 	{	
 		f = new JFrame("Customer Menu");
 		e1 = e;
@@ -1432,7 +1431,7 @@ public class Menu extends JFrame{
 				returnButton.addActionListener(new ActionListener(  ) {
 					public void actionPerformed(ActionEvent ae) {
 						f.dispose();			
-					customer(e);				
+					customerMenu(e);				
 					}		
 			     });										
 			}	
@@ -1456,7 +1455,7 @@ public class Menu extends JFrame{
 					{
 						JOptionPane.showMessageDialog(f, "Pin entered incorrectly 3 times. ATM card locked."  ,"Pin",  JOptionPane.INFORMATION_MESSAGE);
 						((CustomerCurrentAccount) acc).getAtm().setValid(false);
-						customer(e); 
+						customerMenu(e); 
 						loop = false;
 						on = false;
 					}
@@ -1538,7 +1537,7 @@ public class Menu extends JFrame{
 						{
 							JOptionPane.showMessageDialog(f, "Pin entered incorrectly 3 times. ATM card locked."  ,"Pin",  JOptionPane.INFORMATION_MESSAGE);
 							((CustomerCurrentAccount) acc).getAtm().setValid(false);
-							customer(e); 
+							customerMenu(e); 
 							loop = false;
 							on = false;
 						}
